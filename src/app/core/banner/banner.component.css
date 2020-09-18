@@ -1,0 +1,35 @@
+.front-banner {
+    border-top: 1px solid #7b7a82;
+    border-bottom: 1px solid #7b7a82;
+    height: auto;
+    max-height: 200px;
+    overflow: hidden;
+}
+.front-banner img {
+    float: left;
+}
+.responsive {
+    width: 100%;
+}
+.banner-desc {
+    background: #E7E7E7;
+    padding: 1px 0;
+}
+.front-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.banner-header h1 {
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 0px;
+    color: #5A6C74;
+    font-weight: 500;
+    line-height: 1.1;
+}
+@media (max-width: 768px) {
+  .banner-header h1{
+    font-size: 16px;
+  }
+}

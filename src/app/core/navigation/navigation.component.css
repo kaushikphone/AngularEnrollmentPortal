@@ -1,0 +1,86 @@
+.desktop-block {
+    display: block;
+}
+.desktop-none {
+    display: none;
+}
+.front-menu {
+    padding-bottom: 0px;
+}
+.front-content {
+    padding: 20px 0;
+    color:#5A6C74;
+}
+.front-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.front-menu {
+    padding-bottom: 0px;
+}
+.front-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px 10px 0;
+}
+.front-menu ul li a {
+    display: block;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d0cfd3;
+    text-decoration: none;
+    line-height: normal;
+}
+.front-menu ul li a.disable {
+    color: #999 !important;
+    pointer-events: none;
+    cursor: default;
+}
+.front-menu ul li a.active {
+    color: #5A6C74 !important;
+    border-bottom: none !important;
+}
+.front-menu ul li a.visited {
+    color: #77ba2f!important;
+}
+.comp_view button.sub span {
+    position: relative;
+    z-index: 3;
+}
+.comp_view button.sub:hover {
+    color: #ffda00;
+}
+.comp_view button.sub {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    border-radius: 1px;
+    vertical-align: top;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+    -moz-transition: none 0s ease 0s;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    background: rgb(104,116,126);
+    background: -moz-linear-gradient(top, rgba(104,116,126,1) 0%, rgba(137,150,162,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    background: linear-gradient(to bottom, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68747e', endColorstr='#8996a2',GradientType=0 );
+}
+.prevBtn {
+    margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .front-menu ul li{
+    display: block;
+  }
+  .d-block {
+    display: inline-block !important;
+    margin-right: 5px;
+  }
+}

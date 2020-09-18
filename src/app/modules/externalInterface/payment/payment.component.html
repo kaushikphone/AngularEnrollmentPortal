@@ -1,0 +1,120 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<div class="front-content">
+	<div class="front-wrapper">
+    <app-navigation></app-navigation>
+     <div class='comp_view'>
+      <div class='clearfix' *ngIf= !bankDetails>
+        <div class="setup-content" id="step-bank">
+          <h1>Premium Payment</h1>
+	        <div id="afterPayment" class="col-md-12 col-xs-12" style="display:none;">
+		        <div class="alert alert-success" role="alert">
+			        <strong>Success!</strong> Bank Draft Completed Successfully.
+		        </div>
+		        <div class="col-md-12">
+			        <button class="sub btn btn-primary nextBtn btn-lg pull-right" type="button"><span>NEXT</span></button>
+			        <button class="sub btn btn-primary prevBtnPayment btn-lg pull-right" type="button" style="margin-right: 5px;"><span>PREVIOUS</span></button>
+		        </div>
+	        </div>
+	        <div id="beforePayment" class="col-md-12 col-xs-12" style="display:block;">
+		        <div class="row clearfix" style="margin-bottom:20px;">
+			        <div class="col-md-8">
+			          <p>Suspendisse augue quam, tincidunt nec augue a, congue volutpat libero. Nulla aliquam feugiat cursus. Aenean est odio, lobortis ullamcorper pulvinar ut, commodo ut nulla. Nulla suscipit est libero, pulvinar interdum odio ultricies vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sed libero sit amet diam ultricies consectetur.</p>
+                </div>
+			          <div class="col-md-4">
+				          <img src="assets/img/ssl-secure.png" style="max-width:250px;">
+			          </div>
+		          </div>
+		          <div class="col-md-12 col-12">
+			          <button class="sub btn btn-primary nextBtn btn-lg float-right invoiceme" [routerLink] = "'/enrollee/finalize'"><span>INVOICE ME</span></button>
+			          <button class="open-billgo-link sub btn btn-primary btn-lg float-right" style="margin-right: 5px;"(click)='showDetails()'><span>SET UP BANK DRAFT</span></button>
+			          <button class="sub btn btn-primary prevBtn btn-lg float-right" [routerLink] = "'/enrollee/questionAnswer'"><span>PREVIOUS</span></button>
+		          </div>
+	          </div>
+          </div>
+      </div>
+      <div *ngIf= bankDetails>
+        <h2>Setup Bank Draft</h2>
+        <div class='clearfix row'>
+          <div class='col-md-9'>
+            <div class='clearfix row'>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name='routing'class="form-control txt" placeholder='Routing Number' [(ngModel)]="dataBankDetails.routing"  required/>                             
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name="account" class="form-control txt" placeholder="Account Number"  [(ngModel)]="dataBankDetails.account" required/>                         
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">                
+                      <select class="form-control txt"  [(ngModel)]="dataBankDetails.type" required>
+                        <option>CHECKING</option>
+                        <option>SAVINGS</option>
+                        <option>BUSINESS</option>
+                      </select>           
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type="text" name="bank" class="form-control txt" placeholder="Bank Name"/>             
+                  </div>
+                </div>
+              </div>
+              <div class='clearfix row'>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name='firstname'class="form-control txt" placeholder='Bank Account First Name'/>  
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name="lastname" class="form-control txt" placeholder="Bank Account Last Name" />                         
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">                
+                      <input type="text" class="form-control txt" placeholder="Account Owner Address 1" />                
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type="text" name="ssn" class="form-control txt" placeholder="Account Owner Address 2"/>    
+                  </div>
+                </div>
+              </div>
+              <div class='clearfix row'>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name='firstname'class="form-control txt" placeholder='Account Owner City'/>                             
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">
+                    <input type='text' name="lastname" class="form-control txt" placeholder="Account Owner State" />                         
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class="form-group">                
+                      <input type="text" class="form-control txt" placeholder="Account Owner Zip" />                
+                  </div>
+                </div>
+              </div>
+            </div>         
+            <div class="col-md-3">
+				      <img src="assets/img/ssl-secure.png" style="max-width:250px;">
+			      </div>
+          </div>
+          <div class='clearfix'>
+            <div class="float-right">
+			          <button class="sub btn btn-primary nextBtn btn-lg float-right invoiceme" [routerLink] = "'/enrollee/finalize'" (click)='addAccount()'><span>PROCEED</span></button>			         
+			          <button class="sub btn btn-primary prevBtn btn-lg float-right" (click)='hideBankDetails()'><span>PREVIOUS</span></button>
+		          </div>
+            </div>
+        </div>
+     </div>
+    </div>
+  </div>
+ <app-footer></app-footer>

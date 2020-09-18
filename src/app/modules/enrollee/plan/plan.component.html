@@ -1,0 +1,419 @@
+<ng-template #content let-modal>
+  <div class="modal-header declineOffer">
+    <h4 class="modal-title  text-center">Declination of Benefit Review</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body declineOffer">     
+    You are electing to decline your offer to apply for benefits. If you wish to decline, please click DECLINE, otherwise click Go Back
+  </div>
+  <div class="modal-footer comp_view">   
+    <button type="button" class="sub btn btn-primary btn-lg  nextBtn" (click)="modal.dismiss('Cross click')">GO BACK</button>
+    <button type="button" class="sub btn btn-primary btn-lg  nextBtn" (click)="modal.dismiss('Cross click'); ">DECLINE</button>
+  </div>
+</ng-template>
+<app-header></app-header>
+<app-banner></app-banner>
+<div class="front-content">
+	<div class="front-wrapper">
+      <app-navigation></app-navigation>
+     <div class='comp_view'>
+<div class='container'>
+  <div class='row clearfix'>
+    <div class="setup-content">
+      <h1>{{planTitle}}</h1>
+      <div class="production-income-wrapp">
+        <div class="bwlow-production">
+           <p>{{subTitle}}</p>
+        </div>
+        <ul>
+          <li *ngFor="let text of income; let i = index">
+            <div [innerHTML]="text.text.split(':')[1][0] ? text.text.split(':')[0] + ':' + ' ' + '<strong>'+ text.text.split(':')[1] + '</strong>' : text.text"></div>
+          </li>
+        </ul>
+    <span class="explanation">
+      <p>* Explanation of what is represented by Annual Income, e.g., Current Salary + Last Paid Bonus</p>
+    </span>
+   <div class='mandatory-loyds' id='colaTobacco'>
+      <div class='clearfix row'><div class='col-sm-1 nopad-right'><input type='checkbox' class='colaTobaccoCheckbox' [(ngModel)]="tobacco" (change)="onChange($event)" /><label><strong>Tobacco:</strong></label></div><div class='col-sm-2'>Tobacco Instruction</div>  </div>
+      <div class='clearfix row'><div class='col-sm-1 nopad-right'><input type='checkbox' class='colaTobaccoCheckbox' [(ngModel)]="cola" (change)="onChange($event)"><label><strong>COLA:</strong></label></div> <div class='col-sm-2'>COLA Instruction</div></div>
+    </div>
+    <!--<div class='text-center'><h3>Plan6</h3></div>-->
+    <div class="mandatory-loyds table-responsive">
+      
+      <table cellpadding="5" cellspacing="0" border="0" width="100%" class="table">        
+        <tbody>          
+          <tr class="maintr">
+            <th class="col-1-head">&nbsp;</th>
+            <th class="col-2-head">Benefits/Options</th>
+            <th>Monthly Benefit</th>
+            <th>Lump Sum Benefit</th>
+            <th>Premium</th>            
+            <th>Replacement of Monthly Income</th>
+          </tr>          
+          
+          <tr class="">
+            <td class="col-1-head"></td>
+            <td class="col-2-head">Inforce GRP LTD</td>
+            <td>$10,000</td>
+            <td>N/A</td>            
+            <td>N/A</td>
+            <td>12.00%</td>
+          </tr>
+             
+          <tr class="">
+            <td class="col-1-head"></td>
+            <td class="col-2-head">Inforce Sponsor IDI Benefit</td>
+            <td>$10,000</td>
+            <td>N/A</td>            
+            <td>N/A</td>
+            <td>12.00%</td>
+          </tr>        
+          <tr class="reviews">
+            <td colspan="9">Please Review and Then Select From The Options Below</td>
+          </tr>     
+          <tr class="mand">
+            <td class="col-1-head"><input type="radio" class="plan" previousvalue="false" name="plan" checked="" (click)="totalCalc($event)" value="plan6-2" ></td>
+            <td class="col-2-head">Lloyd's Benefit</td>
+            <td>$12,500</td>
+            <td>N/A</td>            
+            <td>{{premium1}}<br> Employee Paid</td>
+            <td>15.00%</td>
+          </tr>
+          <tr>
+            <td class="col-1-head"><input type="radio" class="plan" previousvalue="false" name="plan" value="plan6-3" (click)="totalCalc($event)"></td>
+            <td class="col-2-head">Lloyd's Benefit</td>
+            <td>$25,000</td>
+            <td>N/A</td>           
+            <td>{{premium2}} <br> Employee Paid</td>
+            <td>30.00%</td>
+          </tr>         
+          <tr class="reviews total">
+            <td colspan="5" class="colsp" style="text-align:right;padding-right:0">Total Available Income Replacement Ratio:</td>
+            <td class="grand_total">{{grandTotal}}</td>            
+          </tr>
+        </tbody></table>	                    
+      </div>
+      <div class="accordian-menu-wrapp desk-div mob-div">
+          <div id="cssmenu">
+              <ul>
+                  <li><span class="acc-head">Plan6</span></li>
+                           
+                  <li class="active has-sub" style=" "><a href="#"><span>UNUM Group Current</span></a>
+                  <ul style="display:block;">
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">$20,000</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" ">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">18.23%</span>
+                        </li>
+                    </ul>   
+                  </li>
+                           
+                  <li><span class="reviews">Please review and then select from the options below</span></li>
+                         
+                           
+                  <li style=" display:none;" class="has-sub"><a href="#"><span>Unum IDI Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">hide</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right"> <br>  Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" "> <br>  Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br>  Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br>  Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">0.00%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlanIDI" class="selectPlanIDI  " checked="" value="plan6-idi-1"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                           
+                           
+                <!-- start -->
+                         
+                  <li style=" " class="Selected-plan-idi has-sub"><a href="#"><span>Unum IDI Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">$12,500</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right">$403.34 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" ">$503.43 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">11.39%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlanIDI" class="selectPlanIDI last " checked="" value="plan6-idi-2"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                           
+                           
+                  <li style=" display:none;" class="has-sub"><a href="#"><span>Unum IDI Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">hide</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" "> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">0.00%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlanIDI" class="selectPlanIDI last " value="plan6-idi-3"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                          
+                  <li style=" display:none;" class="has-sub"><a href="#"><span>Unum IDI Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">hide</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" "> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;"> <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">0.00%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlanIDI" class="selectPlanIDI last" value="plan6-idi-4"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                           
+                  <!-- end -->
+                           
+                  <li><span class="reviews">Please review and then select from the options below</span></li>
+                           
+                          
+                  <li class="Selected-plan has-sub" style=" "><a href="#"><span>Lloyd's High Limit Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">$33,321</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right">$388.62 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" ">$485.52 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">30.37%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlan" class="selectPlanMobile" previousvalue="true" checked="" value="plan6-2"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                       
+                          
+                  <li class="has-sub" style=" "><a href="#"><span>Lloyd's High Limit Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">$16,661</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right">$194.82 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" ">$243.78 <br> Employee Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">15.19%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlan" previousvalue="" class="selectPlanMobile" value="plan6-3"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                           
+                           
+                  <li class="has-sub" style=" display:none;"><a href="#"><span>Lloyd's High Limit Selection</span></a>
+                    <ul>
+                        <li>
+                        <span class="left">Monthly Benefit:</span>
+                          <span class="right">hide</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Lump Sum Benefit:</span>
+                          <span class="right" style=" display:none;">N/A</span>
+                        </li>
+                        <li>
+                        <span class="left">Non-Tobacco Rate</span>
+                          <span class="right">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" ">Tobacco Rate</span>
+                          <span class="right" style=" ">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Non-Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left" style=" display:none;">Tobacco Rate w/ COLA</span>
+                          <span class="right" style=" display:none;">Employee <br> Paid</span>
+                        </li>
+                        <li>
+                        <span class="left">Replacement of Monthly Income:</span>
+                          <span class="right">0.00%</span>
+                        </li>
+                        <li class="selectplan">
+                        <input type="radio" name="selectPlan" previousvalue="" class="selectPlanMobile" value="plan6-4"> Select This Plan
+                        </li>
+                    </ul>
+                  </li>
+                           
+                  <li><span class="reviews alt-reviews m_grand_total">Total Income Replacement Ratio: 59.99%</span></li>
+              </ul>
+              </div>	
+          </div>
+          <div class="clear"></div>
+          <div class="mustbe">
+            <p>You must continue the enrollment process to receive the employer paid benefit. Select the “Enroll” link below to continue. If you have elected additional benefits, you will enroll in these benefits as well.</p>            	</div>
+      </div>      
+      <button class="sub btn btn-primary nextBtn btn-lg float-right" [routerLink] = "'/enrollee/census'" ><span>APPLY</span></button>
+      <button class="sub btn btn-primary prevBtn btn-lg float-right" (click)="open(content)"><span>DECLINE</span></button>
+			<button class="sub btn btn-primary prevBtn btn-lg float-right" [routerLink] = "'/overview'" ><span>GO BACK</span></button>
+		</div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+ <app-footer></app-footer>

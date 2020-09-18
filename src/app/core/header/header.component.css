@@ -1,0 +1,109 @@
+.front-headtop {
+    background: #5A6C74;
+}
+.front-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.table-wrapper {
+    display: table;
+    width: 100%;
+    height: 50px;
+}
+.front-headtop-left {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.front-headtop-right {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+.front-headtop-right ul {
+    margin: 0;
+}
+.desktop-block {
+    display: block;
+}
+.front-headtop-right ul li {
+    list-style-type: none;
+    color: #cbced5;
+}
+.desktop-none {
+    display: none;
+}
+.front-headtop-right ul li a {
+    text-decoration: none;
+    color: #cbced5;
+    text-transform: uppercase;
+}
+.front-headtop-left h1 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.exceptional{
+  color:#ffffff;
+}
+.enrollment{
+  color:#d5dde8;
+}
+.logOutCompany{
+  cursor:pointer;
+}
+.front-head-left {
+  float:left;
+  width:50%
+}
+.front-head-right{
+  float:left;
+  width:50%;
+  text-align:right;
+  margin-top:10px;
+}
+
+.front-head-left img{
+  width:100px;
+ 
+}
+button.sub {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    border-radius: 1px;
+    vertical-align: top;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+    -moz-transition: none 0s ease 0s;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    background: rgb(104,116,126);
+    background: -moz-linear-gradient(top, rgba(104,116,126,1) 0%, rgba(137,150,162,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    background: linear-gradient(to bottom, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68747e', endColorstr='#8996a2',GradientType=0 );
+}
+.exceptional-header-desc {
+    text-align: right;
+    color: #67747f;
+    font-size: 21px;
+}
+@media (max-width: 768px) {
+  .front-headtop-left h1{
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px){
+  .d-sm-block {
+    display: inline!important;
+  }
+}

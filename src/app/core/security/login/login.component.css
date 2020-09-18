@@ -1,0 +1,194 @@
+.era-body {
+    background: url('/../assets/img/era-bg.jpg') no-repeat center top;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;    
+}
+.era-wrapp {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.exceptional-login-screen {
+    background: #f6f8f9;   
+    width: 700px;
+    border: 1px solid #bbbbbb;
+    padding: 15px 20px 0;
+}
+.exceptional-login-header {
+    display: table;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.exceptional-header-logo, .exceptional-header-desc {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.exceptional-header-desc {
+    text-align: right;
+    color: #67747f;
+    font-size: 21px;
+}
+.exceptional-header-closed {
+    color: #67747f;
+    font-size: 21px;
+}
+
+.exceptional-login-content form{
+  width:100%;
+  padding-bottom:35px;
+}
+.exceptional-login-content h1 {
+    color: #67747f;
+    font-size: 21px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align:center;
+}
+.exceptional-login-content input.txt {
+    background: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 10px;
+    outline: medium none;
+    padding:13px 25px;
+    transition: all 0.15s linear 0s;
+    width: 100%;
+    box-sizing: border-box;
+    height:auto;
+}
+.exceptional-login-content input.txt.dob{
+  margin-right: 0px; 
+}
+.btn-outline-secondary{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.terms_conditions {
+    color: #525353;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.required_star {
+    color: #F00;
+    margin-right: 4px;
+}
+.exceptional-login-content a.forgot {
+    display: block;
+    text-align: right;
+    color: #67747f;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.exceptional-login-content button.sub {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    border: none;
+    vertical-align: top;
+    font-size: 18px;
+    color: #fff;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -moz-transition: none 0s ease 0s;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    background: rgb(104,116,126);
+    background: -moz-linear-gradient(top, rgba(104,116,126,1) 0%, rgba(137,150,162,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    background: linear-gradient(to bottom, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68747e', endColorstr='#8996a2',GradientType=0 );
+    margin-bottom:5px;
+}
+.has-error{
+  color:#a94442;
+}
+.exceptional-login-header img{
+  width:100px;
+ }
+.exceptional-login-content input.txt:disabled, .exceptional-login-content input.txt[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.exceptional-login-content .contact{
+    font-family: 'Signika', sans-serif;
+    font-size: 11px;
+    color: #525353;
+    font-style: italic;
+    text-align: center;
+}
+.contact-modal button.pull-right-btn {
+    float: right !important;
+    width: 49% !important;
+    margin-bottom:30px !important;
+}
+
+.exceptional-login-content-modal {
+    margin: 0 auto;
+    width: 325px;
+}
+.exceptional-login-content-modal button.sub, .contact-modal button.sub{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    border: none;
+    vertical-align: top;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 1px;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    background: rgb(104,116,126);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(104,116,126,1)),to(rgba(137,150,162,1)));
+    background: linear-gradient(to bottom, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68747e', endColorstr='#8996a2',GradientType=0 );
+    margin-bottom: 5px;
+}
+.terms .h4, .terms h4{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-modal textarea {
+    width: 100%;
+    height: 150px;
+    padding: 13px 23px;
+}
+.exceptional-login-content .contactSupport{
+  padding-bottom:0px;
+}
+.contactSubmit{
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:400px
+}
+.contactSubmit h4{
+  flex: 0 1 100%;
+ }
+ .contactSupport{
+   padding-top:0px !important;
+ }
+ .modalClose{
+   margin-top:5px;
+ }
+ .open-popup-link{
+   color: #23527c;
+ }
+ .gap{
+   height:30px;
+ }

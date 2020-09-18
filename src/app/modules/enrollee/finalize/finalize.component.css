@@ -1,0 +1,104 @@
+#step-4 h1{
+  color:#5A6C74;
+}
+.check {
+    display: inline-block;
+    color: #333;
+    vertical-align: middle;
+    margin-right:15px
+}
+.check input{
+  margin-right:5px
+}
+.sign {
+    display: inline-block;
+    width: 80%;
+    padding-left: 3%;
+    color: #333;
+    vertical-align: middle;
+}
+.table-bordered > thead > tr > th {
+    background-color: #E7EAEC !important;
+}
+.fa-eye{
+  cursor:pointer
+}
+.finalAcceptence{
+  margin-top:20px
+}
+.mandatory-loyds {
+    background: #e8e8e8;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    padding-bottom: 0;
+}
+.mandatory-loyds table {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+}
+.mandatory-loyds table caption {
+    font-size: 18px;
+    color: #556b78;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e8e8e8;
+    padding: 20px 10px;
+    border: 1px solid #dbdbdb;
+    border: none;
+    padding-top: 0;
+}
+.mandatory-loyds table tr th {
+    background: #f1f1f1;
+    font-weight: 700;
+    font-size: 14px;
+    color: #556b78;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #c6c6c6;
+    width: 11%;
+}
+.mandatory-loyds table tr th.col-1-head {
+    width: 5%;
+    border: none;
+    background: none;
+}
+.mandatory-loyds table tr th.col-2-head {
+    width: 18%;
+    border: none;
+    vertical-align: bottom;
+    padding-bottom: 0;
+    background: none;
+}
+.mandatory-loyds table tr td {
+    font-size: 13px;
+    color: #556b78;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #c6c6c6;
+    width: 11%;
+    background: #fff;
+}
+.mandatory-loyds table tr td.col-1-head {
+    width: 5%;
+}
+.mandatory-loyds table tr.reviews td {
+    background: #f1f1f1;
+    font-size: 14px;
+    color: #556b78;
+    font-weight: 700;
+}
+.mandatory-loyds table tr.alternate td {
+    background: #fcfcfc;
+}
+.mandatory-loyds table tr.mand td {
+    background: #fff9c3 !important;
+}
+.mandatory-loyds table tr.total td {
+    background: #e8e8e8;
+    border: none;
+}

@@ -1,0 +1,20 @@
+.comp_view h1{
+  color:#5A6C74;
+  margin-top:0;  
+}
+.benefinContainer{
+  display:flex;
+  width:47%
+}
+.nextBtn{
+  margin-top:10px;
+}
+.videoPlay{
+  padding:10px 10px 10px 0px;
+  font-size:16px;
+}
+@media (max-width: 768px) {
+  .comp_view h1{
+    font-size: 2rem;
+  }
+}

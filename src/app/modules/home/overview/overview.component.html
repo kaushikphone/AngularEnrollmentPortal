@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<div class="front-content">
+	<div class="front-wrapper">
+    <app-navigation></app-navigation>
+    <div class='comp_view'>
+      <div class='container'>
+        <div class='row'>              
+				   <h1>{{getMsg()}}</h1>
+           <div class="w-100"></div>
+           <div class='col' [innerText]='bodyContent'></div>
+           <div class='col'>
+              <div class='clearfix'>
+                <div class='videoPlay float-right'><a href="https://player.vimeo.com/video/98058091" target="_blank">Click to play the video file in new window</a>
+                </div>
+              </div>               
+              <div style="overflow:hidden;position: relative; float:right">
+                  <iframe src="https://player.vimeo.com/video/98058091" width="500" height="280" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"></div>
+              </div>                    
+          </div>
+          <div class='clearfix w-100'>
+                  <div class='float-left'><p>Learn about Your Benefits Instruction</p></div>
+                  <div class='float-right'><button class="sub btn btn-primary nextBtn btn-lg" [routerLink] = "'/enrollee/plan'">Learn About Your Benefits</button></div>
+              </div> 
+       </div>      
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

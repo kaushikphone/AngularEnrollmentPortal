@@ -1,0 +1,35 @@
+h1{
+  color:#5A6C74;
+}
+p {
+    color: #333;
+}
+.section-two-title {
+    background: #e4e6e8;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+.section-two-title h2 {
+    margin: 0;
+}
+.tick {
+    display: none;
+    color: #090;
+    float: right;
+    right: 10px;
+    top: -25px;
+}
+.confirmLastBtns {
+    float: right;
+}
+.setup-content{
+  width:100%;
+}
+@media (max-width: 768px) {
+  .comp_view h1{
+    font-size: 2rem;
+  }
+  .section-two-title h2{
+    font-size: 1.5rem;
+  }
+ }

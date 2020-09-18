@@ -1,0 +1,173 @@
+#step-2 h1 {
+    color: #132432;
+}
+.nopad-right{
+  padding-right:0px
+}
+.bwlow-production {
+    background: #e5e7e8;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #5a6c74;
+}
+.bwlow-production p{
+  margin-bottom:0px;
+}
+.production-income-wrapp ul {
+    padding: 20px 0 0 15px;
+}
+.production-income-wrapp ul li {
+    background: url('/../../assets/img/gold-eye.png') no-repeat left 8px;
+    list-style-type: none;
+    padding: 0 0 10px 30px;
+    font-size: 22px;
+    color: #333;
+}
+.production-income-wrapp span {
+    color: #333;
+}
+.explanation {
+    display: block;
+    font-size: 16px;
+    padding-left: 75px;
+}
+.mandatory-loyds {
+    background: #e8e8e8;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    padding-bottom: 0;
+}
+.mandatory-loyds table {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+}
+.mandatory-loyds table caption {
+    font-size: 18px;
+    color: #556b78;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e8e8e8;
+    padding: 20px 10px;
+    border: 1px solid #dbdbdb;
+    border: none;
+    padding-top: 0;
+}
+.mandatory-loyds table tr th {
+    background: #f1f1f1;
+    font-weight: 700;
+    font-size: 14px;
+    color: #556b78;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #c6c6c6;
+    width: 11%;
+}
+.mandatory-loyds table tr th.col-1-head {
+    width: 5%;
+    border: none;
+    background: none;
+}
+.mandatory-loyds table tr th.col-2-head {
+    width: 18%;
+    border: none;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    background: none;
+}
+.mandatory-loyds table tr td {
+    font-size: 13px;
+    color: #556b78;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #c6c6c6;
+    width: 11%;
+    background: #fff;
+}
+.mandatory-loyds table tr td.col-1-head {
+    width: 5%;
+}
+.mandatory-loyds table tr.reviews td {
+    background: #f1f1f1;
+    font-size: 14px;
+    color: #556b78;
+    font-weight: 700;
+}
+.mandatory-loyds table tr.alternate td {
+    background: #fcfcfc;
+}
+.mandatory-loyds table tr.mand td {
+    background: #fff9c3 !important;
+}
+.mandatory-loyds table tr.total td {
+    background: #e8e8e8;
+    border: none;
+}
+.desk-div {
+    display: none;
+}
+.mustbe {
+    padding-top: 30px;
+}
+.mustbe p {
+    color: #333;
+    font-size: 22px;
+}
+.comp_view button.sub {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    border-radius: 1px;
+    vertical-align: top;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+    -moz-transition: none 0s ease 0s;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    background: rgb(104,116,126);
+    background: -moz-linear-gradient(top, rgba(104,116,126,1) 0%, rgba(137,150,162,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    background: linear-gradient(to bottom, rgba(104,116,126,1) 0%,rgba(137,150,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68747e', endColorstr='#8996a2',GradientType=0 );
+}
+.declineOffer{
+  color: #F00;
+}
+.declineOffer h4{
+  width:100%
+}
+.mandatory-loyds table tr th.withoutBorder{
+  border:none;
+}
+#colaTobacco{
+  margin-right:0px;
+  margin-left:0px;
+  padding: 20px 10px 10px;
+  margin-bottom:20px
+}
+.colaTobaccoCheckbox{
+  width:20px;
+  height:20px;
+  margin-right:8px
+}
+#colaTobacco label{
+  vertical-align: top;
+  font-size:13px
+}
+
+@media (max-width: 768px) {
+  .comp_view h1{
+    font-size: 2rem;
+  }
+  .mustbe p{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,65 @@
+<ng-template #contact let-modal>
+  <!--<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"></h4>
+    
+  </div>-->
+  <div class="modal-body">
+      <div class="exceptional-login-header">
+        <div class="exceptional-header-logo">
+          <img src="assets/img/timthumb.jpg" alt="">
+          <span class='pull-right modalClose'><button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button></span>
+        </div>
+        
+      </div>
+      <div class='exceptional-login-content'>
+        <div *ngIf=showMsg class='contactSubmit'><h4>Thank you for contacting enrollment support. We have received your Inquiry and will respond within 2 business days.</h4></div>
+        <form #contactSupportForm="ngForm" class='contactSupport' *ngIf=!showMsg>         
+          <div class='clearfix row'>
+            <div class='col-sm-6'>
+              <div class="form-group">
+                <input type='text' name='firstname'class="form-control txt" placeholder='First Name' [(ngModel)]="firstName"/>
+                               
+              </div>
+            </div>
+            <div class='col-sm-6'>
+              <div class="form-group">
+                <input type='text' name="lastname" class="form-control txt" placeholder="Last Name" [(ngModel)]="lastName"/>
+                          
+              </div>
+            </div>
+          </div>
+          <div class='clearfix row'>
+            <div class='col-sm-6'>
+              <div class="form-group">                
+                  <input type='text' name="email" class="form-control txt" placeholder="Email" />
+               
+              </div>
+            </div>
+            <div class='col-sm-6'>
+              <div class="form-group">
+                <input type='text' name="phone" class="form-control txt" placeholder="Phone Number (optional)"/>
+                
+              </div>
+            </div>
+            <div class='col-sm-12 contact-modal'>
+              <textarea name="pplMsg" placeholder="Enter your message" required="" spellcheck="true" class='form-control'></textarea>
+            </div>
+          </div>          
+          <div class="terms_conditions">
+            <input type="checkbox" name="agree_signin" required="" class="agree_signin"><span class="required_star">*</span>                       
+            Send copy of support request to the email address I provided.
+          </div>    
+        </form>        
+      </div>
+    </div>
+  <div class="modal-footer clearfix contact-modal" *ngIf=!showMsg>
+    <button type="button" class="btn btn-default sub pull-right-btn" (click)="modal.dismiss('Cross click')">BACK</button>
+    <button type="submit" class="btn btn-default sub pull-right-btn" (click)='change()'><span>SUBMIT</span></button>    
+  </div>
+</ng-template>
+<footer>		
+		<p><a class="contact-popup-link" href="javascript:" (click)="open(contact)">Contact Support</a></p>
+</footer>
+

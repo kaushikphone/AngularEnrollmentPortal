@@ -1,0 +1,356 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<div class="front-content">
+	<div class="front-wrapper">
+    <app-navigation></app-navigation>
+     <div class='comp_view'>
+      <div class='container'>
+        <div class=''>
+          <div class='setup-content'>
+            <h1>Answer Questions</h1>
+            <p>Please answer all questions below. If you have questions about the data provided on this screen, please contact << Broker >> at << Phone >> or << Email >>.</p>
+            <div class="section-two-title">
+              <h2>Application Questions</h2>
+            </div>
+              <div class="col-md-12 col-xs-12">
+                <div class="form-group section-two-form">  
+                  <div class="tobaco_section">                   
+                      <div class="true-frequency iftobacoyes" style="display:none;">
+                        <label class="control-label">If YES, please provide detail on frequency of usage on type of tobacco products.</label>
+                          <div class="form-input">
+                            <input class="form-control section_2_input" maxlength="" type="text" name="" data-key="Tobacco_DET" value="" placeholder="" spellcheck="true">
+                            <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                      </div>
+                  </div>
+                  <label class="control-label">Do you have or are you applying for any other disability coverage?</label>
+                  <div class="form-input">
+                  <label class="radio-inline">
+                    <input type="radio" name="ifcoverage" data-key="Apply_Coverage" class="section_2_check" value="Yes">
+                    Yes </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="ifcoverage" checked="" data-key="Apply_Coverage" class="section_2_check" value="No">
+                    No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+                  <div class="true-frequency ifcovarge" style="display:none;">
+                    <label class="control-label">If YES, please describe coverage in-force or applied below.</label>
+                  <div class="coverage_details_group_parent">  
+      
+                            <div class="if-coverage-yes">
+                        <div class="coverage_details_group">
+                        <div class="coverage-details">
+                          <input type="hidden" name="sec2_count" class="sec2_count" value="0">
+                          <div class="form-input">            
+                          <label class="control-label">Company Name</label>
+                          <input class="form-control section_2_input" onkeyup="this.value=this.value.replace(/[^a-z0-9\s]/gi,'')" placeholder="No special characters allowed. Ie. ; / \ - " maxlength="" type="text" name="" data-key="GRP_LTD_Company" value="" spellcheck="true">
+                          <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                          <div class="form-input">
+                          <label class="control-label">Monthly Benefit</label>
+                          <input class="form-control section_2_input numaric" maxlength="" type="text" name="" data-key="GRP_LTD_Benefit" value="" placeholder="" spellcheck="true">
+                          <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                          <div class="form-input">
+                          <label class="control-label">Elimination Period</label>
+                          <input class="form-control section_2_input" maxlength="" type="text" name="" data-key="GRP_LTD_EP" value="" placeholder="" spellcheck="true">
+                          <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                          <div class="form-input">
+                          <label class="control-label">Benefit Period</label>
+                          <input class="form-control section_2_input" maxlength="" type="text" name="" data-key="GRP_LTD_BP" value="" placeholder="" spellcheck="true">
+                          <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                          <div class="form-input">
+                          <label class="control-label">Is insurance being applied for replacing this coverage?</label>
+                          <label class="radio-inline">
+                            <input type="radio" name="rep_cov" data-key="GRP_Replace_Coverage" class="section_2_check is_insu" value="Yes">
+                            Yes </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="rep_cov" data-key="GRP_Replace_Coverage" class="section_2_check is_insu" value="No">
+                            No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+                          <div class="form-input date_dis" style=" display:none; ">
+                          <label class="control-label">If yes, replacement date?</label>
+                          <input class="form-control section_2_input disdate dateMask" maxlength="" type="text" name="" data-key="GRP_Discont_Period" value="" placeholder="" spellcheck="true">
+                          <span class="glyphicon glyphicon-ok tick"></span>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+     
+          
+            
+                    <!-- FOR SESSION GRAY BOX DATA START -->
+                          <!-- FOR SESSION GRAY BOX DATA END   -->          
+            
+                      </div>
+                      <div class="true-frequency agree-freq">
+                          <div class="additonal-add" style="margin-left:0;color: #333;"> <span>Do you have any other coverage, in-force or being applied for, to add in addition to the above?</span> <a class="add_coverage_detail_box" href="javascript:;">ADD NEW</a>
+                        <div class="clear"></div>
+      	                </div>
+                            <p class="agreement_statement" style=" display:none; "><span><i> I understand that Exceptional Risk Advisors will rely upon my agreement to permanemtly cancel, within 30 days of the issue date or the effective date of the coverage issued pursuant to this application, whichever is later, the coverage(s) indicated in above in determining what amount of insurance, if any, it will issue. I further understand that any coverage issued by Exceptional Risk Advisors pursuant to this application is conditioned upon my cancellation of the coverage(s) indicated.</i> </span></p>
+                                        </div>
+                  </div>   
+            
+                          <label class="control-label">For the period of time commencing <span class="red-">50</span> days prior to the date of this application are you now and have you been continuously at work on a full-time basis in the usual and customary manner performing all of the duties of your occupation?</label>
+                    <div class="form-input">
+                    <label class="radio-inline">
+                      <input type="radio" name="work" required="" checked="" data-key="At_Work" class="section_2_check" value="Yes">
+                      Yes </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="work" data-key="At_Work" class="section_2_check" value="No">
+                      No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+                    <div class="true-frequency ifwork" style="display:none;">
+                      <label class="control-label">If NO, provide details including dates missed and details of restrictions or limitations.</label>
+                      <div class="form-input">
+                      <textarea class="form-control section_2_input" rows="5" cols="" data-key="At_Work_DET" spellcheck="true"></textarea>
+                      <span class="glyphicon glyphicon-ok tick"></span>
+                      </div>
+                    </div>
+                    <label class="control-label">For the period of time commencing <span class="red-">50</span> days prior to the date of this application have you been  homebound or hospitalized due to an accident or sickness?</label>
+                    <div class="form-input">
+                    <label class="radio-inline">
+                      <input type="radio" name="hospitalized" required="" data-key="Hospitalized" class="section_2_check" value="Yes">
+                      Yes </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="hospitalized" checked="" data-key="Hospitalized" class="section_2_check" value="No">
+                      No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+                    <div class="true-frequency ifhospitalized" style="display:none;">
+                      <label class="control-label">If YES, provide details including dates missed and details of restrictions or limitations.</label>
+                      <div class="form-input">
+                      <textarea class="form-control section_2_input" rows="5" cols="" data-key="Hospitalized_DET" spellcheck="true"></textarea>
+                      <span class="glyphicon glyphicon-ok tick"></span>
+                      </div>         
+                    </div>                    
+                  </div>    
+                </div>
+                <div class="section-two-title">
+  <h2>Existing and/or Pending Coverage</h2>
+</div>
+<div class="col-md-12 col-xs-12">
+  <div class="form-group section-two-form">
+   <input type="hidden" class="pid" name="pid" value="57095"> 
+   <input type="hidden" class="curStep" name="curStep" value="4">
+	<!-- Toggle Show “Group Long Term Disability coverage” grid.  -->
+	 	<div class="fulltimegrid">
+    <label class="control-label">Do You have any Group Long Term Disability coverage, in force or being applied for?</label>
+      <div class="form-input">
+      <label class="radio-inline">
+        <input type="radio" name="Group_Long_Term_Disability" required="" checked="" disabled="" data-key="Group_Long_Term_Disability" value="Yes" class="section_4_check">
+        Yes </label>
+      <label class="radio-inline">
+        <input type="radio" name="Group_Long_Term_Disability" disabled="" data-key="Group_Long_Term_Disability" value="No" class="section_4_check">
+        No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+          
+        <div class="true-frequency">       
+        <div class="form-input">
+        <label class="control-label">If yes, what is the monthly benefit amount?</label>
+        <input class="form-control section_4_input req_monthly" required="" type="text" name="GRP_LTD_Benefit" data-key="GRP_LTD_Benefit" disabled="" value="$20,000" spellcheck="true">
+        <span class="glyphicon glyphicon-ok tick"></span>
+        </div>
+        
+          <label class="control-label">Is this coverage Employer pay?</label>
+          <div class="form-input">
+          <label class="radio-inline">
+            <input type="radio" name="GRP_LTD_Employer_Paid" required="" checked="" disabled="" data-key="GRP_Employer_Pay" value="yes" class="section_4_check">
+            Yes </label>
+          <label class="radio-inline">
+            <input type="radio" name="GRP_LTD_Employer_Paid" disabled="" data-key="GRP_Employer_Pay" value="no" class="section_4_check">
+            No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+            
+      </div>
+    </div>
+    	<!-- Toggle Show “Group Long Term Disability coverage” grid.  -->
+<input type="hidden" name="sec4_count" class="sec4_count" value="0">
+<!-- Toggle Show “Individual Disability coverage” grid. -->
+  <div class="fulltimegrid">
+<label class="control-label">Do You have any Individual Disability coverage, in force or being applied for?</label>
+    <div class="form-input">
+    <label class="radio-inline">
+      <input type="radio" name="IND_Disability_Cov" required="" data-key="IND_Disability_Cov" value="Yes" class="section_4_check">
+      Yes </label>
+    <label class="radio-inline">
+      <input type="radio" name="IND_Disability_Cov" checked="" data-key="IND_Disability_Cov" value="No" class="section_4_check">
+      No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+    <div class="true-frequency">
+      <div class="if-coverage-yes">
+          <div class="coverage_details_group1" style=" display:none; ">
+          <label class="control-label">If “Yes”, complete the following:</label>
+          <div class="coverage-details">
+          <div class="form-input">
+            <label class="control-label">Company Name</label>
+            <input class="form-control section_4_input" onkeyup="this.value=this.value.replace(/[^a-z0-9\s]/gi,'')" placeholder="No special characters allowed. Ie. ; / \ - " type="text" name="" data-key="Sec4_Company_Name" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Monthly Benefit</label>
+            <input class="form-control section_4_input numaric" type="text" name="" data-key="Sec4_Monthly_Benefit" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Is coverage paid by the employer?</label>
+            <label class="radio-inline">
+            <input type="radio" name="Sec4_Cov_Paid_Employer" data-key="Sec4_Cov_Paid_Employer" value="Yes" class="section_4_check">
+            Yes </label>
+            <label class="radio-inline">
+            <input type="radio" name="Sec4_Cov_Paid_Employer" data-key="Sec4_Cov_Paid_Employer" value="No" class="section_4_check">
+            No </label>
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Is insurance being applied for replacing this coverage?</label>
+            <label class="radio-inline">
+              <input type="radio" name="Sec4_Insurance_Replace_Coverage" data-key="Sec4_Insurance_Replace_Coverage" class="section_4_check is_insu" value="Yes">
+              Yes </label>
+            <label class="radio-inline">
+              <input type="radio" name="Sec4_Insurance_Replace_Coverage" data-key="Sec4_Insurance_Replace_Coverage" class="section_4_check is_insu" value="No">
+              No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+            <div class="form-input date_dis" style=" display:none; ">
+            <label class="control-label">If yes, replacement date?</label>
+            <input class="form-control section_4_input removereq dateMask" type="text" name="" data-key="Sec4_Date_Of_Dicont" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+          </div>
+          	                  
+                  <!-- GRAY SECTION SESSION START -->
+                                    <!-- GRAY SECTION SESSION END   -->
+                  
+          </div>
+        
+          <div class="additonal-add" style=" display:none;color: #333;"> <span>Do you have any other coverage, in-force or being applied for, to add in addition to the above?</span> <a class="add_coverage_detail_box_ind" href="javascript:;">ADD NEW</a>
+          <div class="clear"></div>
+      	  </div>
+          
+          </div>
+          </div>
+           </div>
+                    
+   <input type="hidden" name="sec4_count_oth" class="sec4_count_oth" value="0">       
+                      
+<label class="control-label">Do you have or are you applying for any other disability coverage?</label>
+    <div class="form-input">
+    <label class="radio-inline">
+      <input type="radio" name="OTH_Disability_Cov" required="" data-key="OTH_Disability_Cov" value="Yes" class="section_4_check">
+      Yes </label>
+    <label class="radio-inline">
+      <input type="radio" name="OTH_Disability_Cov" checked="" data-key="OTH_Disability_Cov" value="No" class="section_4_check">
+      No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+    <div class="true-frequency">
+      <div class="if-coverage-yes">
+          <div class="coverage_details_group oth_grp" style=" display:none;">
+          <label class="control-label">If YES, please describe coverage in-force or applied below.</label>
+          <div class="coverage-details">
+          <div class="form-input">
+            <label class="control-label">Company Name</label>
+            <input class="form-control section_4_input" onkeyup="this.value=this.value.replace(/[^a-z0-9\s]/gi,'')" placeholder="No special characters allowed. Ie. ; / \ - " type="text" name="" data-key="Sec4_OTH_Company_Name" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Monthly Benefit</label>
+            <input class="form-control section_4_input numaric" type="text" name="" data-key="Sec4_OTH_Monthly_Benefit" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Elimination Period</label>
+            <input class="form-control section_4_input removereq" maxlength="" type="text" name="" data-key="Sec4_OTH_GRP_LTD_EP" value="" placeholder="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+             <div class="form-input">
+            <label class="control-label">Benefit Period</label>
+            <input class="form-control section_4_input removereq" maxlength="" type="text" name="" data-key="Sec4_OTH_GRP_LTD_BP" value="" placeholder="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            <div class="form-input">
+            <label class="control-label">Is insurance being applied for replacing this coverage?</label>
+            <label class="radio-inline">
+              <input type="radio" name="Sec4_OTH_Insurance_Replace_Coverage" data-key="Sec4_OTH_Insurance_Replace_Coverage" class="section_4_check is_insu" value="Yes">
+              Yes </label>
+            <label class="radio-inline">
+              <input type="radio" name="Sec4_OTH_Insurance_Replace_Coverage" data-key="Sec4_OTH_Insurance_Replace_Coverage" class="section_4_check is_insu" value="No">
+              No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+              <div class="form-input date_dis" style=" display:none; ">
+            <label class="control-label">If yes, replacement date?</label>
+            <input class="form-control section_4_input removereq dateMask" type="text" name="" data-key="Sec4_OTH_Date_Of_Dicont" value="" spellcheck="true">
+            <span class="glyphicon glyphicon-ok tick"></span>
+            </div>
+            
+          </div>
+           <!-- // here-->
+                    <!--// to here-->
+          
+          <!-- GRAY SECTION SESSION OTHER START -->
+                    <!-- GRAY SECTION SESSION OTHER END   -->
+          
+          </div>        
+          </div>
+          </div>
+          
+           
+          
+          <div class="true-frequency agree-freq" style=" display:none;">
+          <div class="additonal-add_oth" style="margin-left:0;color: #333;"> <span>Do you have any other coverage, in-force or being applied for, to add in addition to the above?</span> <a class="add_coverage_detail_box_oth" href="javascript:;">ADD NEW</a>
+          <div class="clear"></div>
+      	  </div>
+          <p class="agreement_statement" style=" display:none; "><span><i> I understand that Exceptional Risk Advisors will rely upon my agreement to permanemtly cancel, within 30 days of the issue date or the effective date of the coverage issued pursuant to this application, whichever is later, the coverage(s) indicated in above in determining what amount of insurance, if any, it will issue. I further understand that any coverage issued by Exceptional Risk Advisors pursuant to this application is conditioned upon my cancellation of the coverage(s) indicated.</i> </span></p>
+        </div>
+
+      </div>    
+    </div>
+
+               <div class="section-two-title">
+  <h2>Serious Illness Benefit</h2>
+</div>
+<div class="col-md-12 col-xs-12">
+  <div class="form-group section-two-form">
+    <input type="hidden" class="pid" name="pid" value="57095">
+    <input type="hidden" class="curStep" name="curStep" value="5">
+	<!-- Toggle Show “SECTION 5 QUESTIONS” grid.  -->
+	
+	<div class="fulltimegrid">
+    <div class="sec5_questions">
+    <label class="control-label">In the past 10 years, have You been diagnosed with or sought medical treatment (including medication) for heart attack, coronary disease, stroke or transient ischemic attack, organ transplant, renal (kidney) disease or failure, hepatitis B or C, cirrhosis, emphysema, chronic obstructive pulmonary disorder or diabetes (excluding gestational diabetes)?</label>
+      <div class="form-input">
+      <label class="radio-inline">
+        <input type="radio" name="Medical_Past_10_Years" required="" data-key="Medical_Past_10_Years" class="section_5_check" value="Yes">
+        Yes </label>
+      <label class="radio-inline">
+        <input type="radio" name="Medical_Past_10_Years" checked="" data-key="Medical_Past_10_Years" class="section_5_check" value="No">
+        No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+    </div>
+    <div class="sec5_questions">    
+        <label class="control-label">In the past 10 years, have You been prescribed three or more medications to be taken concurrently for high blood pressure?</label>
+      <div class="form-input">
+      <label class="radio-inline">
+        <input type="radio" name="Medication_BP" required="" data-key="Medication_BP" class="section_5_check" value="Yes">
+        Yes </label>
+      <label class="radio-inline">
+        <input type="radio" name="Medication_BP" checked="" data-key="Medication_BP" class="section_5_check" value="No">
+        No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+    </div>
+    <div class="sec5_questions">    
+         <label class="control-label">In the past 10 years, have You been diagnosed with or sought medical treatment (including medication) for: cancer including Leukemia, Hodgkin’s Disease, skin cancer (excluding basal cell cancer) or malignant tumors of any kind?</label>
+      <div class="form-input">
+      <label class="radio-inline">
+        <input type="radio" name="Medical_Treatment_10_Years" required="" data-key="Medical_Treatment_10_Years" class="section_5_check" value="Yes">
+        Yes </label>
+      <label class="radio-inline">
+        <input type="radio" name="Medical_Treatment_10_Years" checked="" data-key="Medical_Treatment_10_Years" class="section_5_check" value="No">
+        No </label></div><span class="glyphicon glyphicon-ok tick"></span>
+     </div>   
+    </div>    
+   </div>
+ </div>
+
+                <div class='clearfix'><div class="confirmLastBtns">
+                    <button class="sub btn btn-primary onPrev prevBtn btn-lg" [routerLink] = "'/enrollee/census'"><span>PREVIOUS</span></button>
+                    <button class="sub btn btn-primary btn-lg nbtn" [routerLink] = "'/interface/payment'"><span>NEXT</span></button>                
+                  </div></div>
+                  <p>Directions for Questionnaire 2 Instruction</p>
+                </div>
+               </div>
+              </div>
+              
+            </div>
+            
+        </div>
+    </div>
+ <app-footer></app-footer>
+
