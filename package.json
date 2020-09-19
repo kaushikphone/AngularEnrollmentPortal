@@ -27,7 +27,7 @@
     "bootstrap": "^4.5.2",
     "http-server": "^0.12.3",
     "ng-bootstrap-modal": "^1.1.19",
-    "rxjs": "~6.5.4",
+    "rxjs": "~6.6.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
     "xml-js": "1.6.11"
