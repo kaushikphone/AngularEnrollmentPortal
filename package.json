@@ -25,7 +25,7 @@
     "@angular/service-worker": "~9.0.1",
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
     "bootstrap": "^4.5.2",
-    "http-server": "^0.12.3",
+    "http-server": "^0.13.0",
     "ng-bootstrap-modal": "^1.1.19",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
